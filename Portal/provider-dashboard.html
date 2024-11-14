@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Provider Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Job Provider Dashboard</h1>
+            <nav>
+                <a href="index.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="dashboard-section">
+            <h2>Post a New Job</h2>
+            <input type="text" placeholder="Job Title" class="input">
+            <textarea placeholder="Job Description" class="input"></textarea>
+            <button class="btn"><i class="fas fa-plus-circle"></i> Post Job</button>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Manage Applications</h2>
+            <div class="job-list">
+                <div class="job-card">
+                    <h3>Priyanshu Ray</h3>
+                    <p>Software Engineer (Shortlisted)</p>
+                    <button class="btn"><i class="fas fa-check-circle"></i> Schedule Interview</button>
+                    <button class="btn"><i class="fas fa-times-circle"></i> Reject</button>
+                </div>
+                <div class="job-card">
+                    <h3>Shivam</h3>
+                    <p>Data Analyst (Rejected)</p>
+                    <button class="btn remove-btn"><i class="fas fa-trash-alt"></i> Remove</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Resume Search</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search for candidates" class="input">
+                <button class="btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
